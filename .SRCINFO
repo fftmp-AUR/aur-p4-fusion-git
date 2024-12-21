@@ -1,0 +1,20 @@
+pkgbase = p4-fusion-git
+	pkgdesc = Perforce to Git conversion tool
+	pkgver = v1.13.r14.g307aca8
+	pkgrel = 1
+	url = https://github.com/salesforce/p4-fusion
+	arch = x86_64
+	license = BSD-3-Clause
+	makedepends = git
+	depends = openssl-1.1
+	depends = pcre2
+	provides = p4-fusion
+	conflicts = p4-fusion
+	source = p4-fusion-git::git+https://github.com/salesforce/p4-fusion.git
+	source = https://www.perforce.com/downloads/perforce/r24.2/bin.linux26x86_64/p4api-glibc2.12-openssl1.1.1.tgz
+	source = p1.patch
+	sha256sums = SKIP
+	sha256sums = ee24e7250d87aab3f14a2cdedc384ed35393362d932e0e1a0380a55323020c9d
+	sha256sums = b4400756b71b2f12993981b4eb717bcbb6776691f1dbc67d3f41df8a09a295d7
+
+pkgname = p4-fusion-git
